@@ -309,10 +309,25 @@ body {
 /* Lado izquierdo: imagen fija con efecto scroll (parallax) */
 .hero-left {
     position: relative;
-    background-image: url('https://i.ibb.co/7tWFHLmP/ff1fb6f9f315014f4a80cd51b6db9f33.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* mantiene efecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+/* Image container for left hero image */
+.img-container {
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Lado derecho: sin efecto, solo imagen estática */
