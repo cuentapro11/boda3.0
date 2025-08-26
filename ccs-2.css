@@ -483,13 +483,34 @@ body {
 	.countdown-container { gap: 0.5rem; }
 }
 
-/* Tamaño uniforme para los lord-icon */
-.event-icon lord-icon,
+/* Remove strict lord-icon sizing to allow custom sizes */
+/* .event-icon lord-icon,
 .camera-icon lord-icon,
 .gift-icon lord-icon,
 .party-icon lord-icon {
 	width: 110px !important;
 	height: 110px !important;
+} */
+
+.event-icon,
+.camera-icon,
+.gift-icon,
+.party-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Enlarge event icon circle slightly for balance */
+.event-icon {
+	width: 7rem;
+	height: 7rem;
+	margin: 0 auto 1.25rem;
+	padding: 0.5rem;
+	border-radius: 50%;
+	background-color: hsl(var(--gold) / 0.1);
+	border: 2px solid hsl(var(--gold));
+	box-shadow: var(--shadow-elegant);
 }
 
 /* Corbata animada (dress code) */
