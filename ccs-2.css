@@ -459,9 +459,24 @@ body {
 }
 
 .countdown-item { min-width: 0; }
-.countdown-number { font-size: clamp(1.25rem, 10vw, 3rem); }
-.countdown-label { font-size: clamp(0.6rem, 3vw, 0.85rem); }
-.countdown-separator { font-size: clamp(1rem, 8vw, 2rem); }
+.countdown-number {
+	font-size: clamp(1.75rem, 8vw, 3.25rem);
+	font-weight: 800;
+	color: hsl(var(--brown-dark));
+	margin-bottom: 0.25rem;
+	animation: flip-in 0.6s ease-out;
+	letter-spacing: 0.02em;
+}
+
+.countdown-label {
+	font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+	color: hsl(var(--brown));
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	opacity: 0.9;
+}
+
+.countdown-separator { color: hsl(var(--brown-light)); }
 
 /* Evitar ruptura en móviles muy pequeños */
 @media (max-width: 480px) {
@@ -706,10 +721,10 @@ body {
 }
 
 .party-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     margin: 0 auto 1.5rem;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 50%;
     background-color: hsl(var(--gold) / 0.1);
     box-shadow: var(--shadow-elegant);
@@ -719,6 +734,15 @@ body {
     color: hsl(var(--gold));
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
     animation: gentle-pulse 2s ease-in-out infinite;
+    overflow: hidden;
+}
+
+.party-icon .tie-icon,
+.party-icon lord-icon,
+.party-icon svg {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
 }
 
 .party-card h3 {
