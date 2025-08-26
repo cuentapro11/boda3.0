@@ -286,7 +286,7 @@ body {
 .hero-wrapper {
     position: relative;
     z-index: 0;
-    padding: 2rem 0; /* para que respire como el resto del contenido */
+    padding: 0;
 }
 
 /* Para centrar la grilla de portada igual que el resto */
@@ -429,7 +429,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.06);
     padding: 2.5rem 1rem;
-    max-width: 900px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
 }
 
@@ -446,7 +447,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    max-width: 48rem;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -856,7 +858,7 @@ body {
     }
     .events-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
     .party-grid {
         grid-template-columns: 1fr;

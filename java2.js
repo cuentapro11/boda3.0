@@ -135,7 +135,7 @@ function updateMusicIcon() {
 
 // Countdown
 function initializeCountdown() {
-    const targetDate = new Date('2025-08-15T10:00:00').getTime();
+    const targetDate = new Date('2025-12-31T23:59:59').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();
