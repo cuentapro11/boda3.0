@@ -309,7 +309,7 @@ body {
 /* Lado izquierdo: imagen fija con efecto scroll (parallax) */
 .hero-left {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop&crop=center');
+    background-image: url('https://i.ibb.co/7tWFHLmP/ff1fb6f9f315014f4a80cd51b6db9f33.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* mantiene efecto */
